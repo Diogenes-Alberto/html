@@ -1,13 +1,16 @@
 
+function geraUf()
+{
+  let estados=["","AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RR","RO","RJ","RN",
+  "RS","SC","SP","SE","TO"];
+  let html="";
+  for(let i=0;i<estados.length;i++)
+  {
+    html+=`
+    <option>${estados[i]}</option>`;
+  }
+  document.getElementById("uf").innerHTML=html;
+}
 
-     function teste()
-     {
-         document.getElementById("email").value=document.getElementById("dataNascimento").value;
-         console.log(document.getElementById("dataNascimento").value);
-     }
- 
-       function mostraData()
-       {
-         let data = document.getElementById("dataNascimento").value;
-         console.log(data);
-       }
+
+geraUf();
