@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Css Grid e Flexbox</title>
+</head>
+<body>
+
+    <header class= "header">
+        <a href="/">logo </a>
+        <nav>
+            <ul class= "menu">
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="candidatar.html">Cadastro</a></li>
+                <li><a href="/">Contato</a></li>
+            </ul>
+        </nav>   
+    </header>
+
+    <form id="formulario" name="formulario">
+
+        <h1 class="row">Dados Cadastrais</h1>
+
+        <div class="row">
+
+            <label class="col-0" for="cpf">CPF:</label>
+            <input class="col-2" type="text" id="cpf" name="cpf">    
+
+
+            <label class="col-0" for="rg">RG:</label>
+            <input class="col-2" type="text" id="rg" name="rg">    
+
+
+            <label class="col-1-0" for="habilitacao">Habilitação:</label>
+            <select class="col-1"type="text" id="habilitacao" name="habilitacao">
+                <option></option>
+                <option>SIM</option>
+                <option>NÃO</option>
+            </select>
+
+
+            <label class="col-1" for="tipoHabilitacao">Habilitação:</label>
+            <select class="col-2" id="tipoHabilitacao" name="tipoHabilitacao">
+                <option></option>
+                <option>CARTEIRA A</option>
+                <option>CARTEIRA B</option>
+                <option>CARTEIRA AB</option>
+            </select>
+
+
+            <label class="col-0" for="vaga">Vaga:</label>
+            <input class="col-4"type="text" id="vaga" name="vaga">
+
+        </div>
+
+
+        <div class="row">
+
+            <label class="col-0" for="nomeCompleto">Nome:</label>
+            <input class="col-4"type="text" id="nomeCompleto" name="nomeCompleto">
+
+            <label class="col-2"for="dataNascimento">Data de Nasc.:</label>
+            <input class="col-3"type="datetime-local" id="dataNascimento" name="dataNascimento">
+
+            <label class="col-0"for="sexo">Sexo:</label>
+            <select class="col-2" name="sexo" id="sexo">
+                <option ></option>
+                <option >MASCULINO</option>
+                <option >FEMININO</option>
+            </select>
+
+            <label class="col-2" for="estadoCivil">Estado Civil:</label>
+            <select class="col-2" name="estadoCivil" id="estadoCivil">
+                <option ></option>
+                <option >CASADO</option>
+                <option >SOLTEIRO</option>
+                <option >VIUVO</option>
+                <option >DIVORCIADO</option>
+                <option >SEPARADO</option>
+                <option >AMASIADO</option>
+                
+            </select>
+        
+        </div>
+        
+        <h1 class="row">ENDERECO</h1>
+
+        <div class="row">
+
+            <label class="col-0" for="cep">Cep:</label>
+            <input class="col-1"type="text" id="cep" name="cep">
+
+
+            <label class="col-1-0" for="logradouro">Logradouro:</label>
+            <input class="col-3"type="text" id="logradouro" name="logradouro">
+
+            <label class="col-0" for="numero">nº:</label>
+            <input class="col-0"type="text" id="numero" name="numero">
+
+
+            <label class="col-1-0" for="complemento">Complemento:</label>
+            <input class="col-2"type="text" id="complemento" name="complemento">
+
+
+        </div>
+
+        <div class="row">
+
+            <label class="col-0" for="bairro">Bairro:</label>
+            <input class="col-1"type="text" id="bairro" name="bairro">
+
+
+            <label class="col-0" for="cidade">Cidade:</label>
+            <input class="col-3"type="text" id="cidade" name="cidade">
+
+            <label class="col-0" for="uf">UF:</label>
+            <select class="col-1" id="uf" name="uf">
+            <option></option>
+            </select>
+
+        </div>
+
+        <h1 class="row">CONTATO</h1>
+
+
+        <div class="row">
+
+            <label class="col-0" for="email">Email:</label>
+            <input class="col-3" type="text" id="email" name="email" onblur="teste()">
+
+            <label class="col-0" for="telCelular">Celular:</label>
+            <input class="col-1" type="text" id="telCelular" name="telCelular">
+
+
+            <label class="col-0" for="telFixo">Fixo:</label>
+            <input class="col-3" type="text" id="telFixo" name="telFixo">
+
+
+        </div>
+
+
+        <input type="submit" >
+
+    </form>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
+
